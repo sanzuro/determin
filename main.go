@@ -17,9 +17,9 @@ func det(a []int, r int) int {
 				}
 			}
 			if i%2 == 0 {
-				LocalDet += i * det(newMat, r-1)
+				LocalDet += a[i] * det(newMat, r-1)
 			} else {
-				LocalDet -= i * det(newMat, r-1)
+				LocalDet -= a[i] * det(newMat, r-1)
 			}
 		}
 	}
